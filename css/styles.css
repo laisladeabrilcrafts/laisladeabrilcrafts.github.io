@@ -54,7 +54,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 35%;
+    width: 50%;
     height: 10%;
     border: solid black 1px;
     border-radius: 25px;
@@ -80,7 +80,9 @@ body {
 .text {
     margin-right: auto;
     margin-left: auto;
-    font: 1.5em 'Pacifico', Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Lucida handwriting", "Comic Sans", cursive;
     color: #2b2b2b;
     text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7p
 }
