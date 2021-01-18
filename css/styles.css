@@ -1,0 +1,190 @@
+body, html {
+    width:100%;
+    height: 100%;
+}
+body {
+    margin:0;
+    padding:0;
+    background:#ffffff;
+}
+
+.header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    margin-top: 3%;
+}
+
+.cards {
+    display: flex;
+    height: 50%;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header .logo {
+    height: 85%;
+    width: 50%;
+    background-image: url('../img/laisla_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.instagram .logo {
+    background-image: url('../img/instagram.png')
+}
+
+.facebook .logo {
+    background-image: url('../img/facebook.png')
+}
+
+.youtube .logo {
+    background-image: url('../img/youtube.png')
+}
+
+.tiktok .logo {
+    background-image: url('../img/tiktok.png')
+}
+
+.card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 10%;
+    border: solid black 1px;
+    border-radius: 25px;
+    margin: 2% 0 0 0;
+    padding-left: 10px;
+    background-color: #ffc7f1;
+    box-shadow: 4px 2px;
+}
+
+.card:hover {
+    background-color: rgb(255, 133, 239);
+    cursor: pointer;
+}
+
+.card .logo {
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 30px;
+    background-size: contain;
+    background-position: center;
+}
+
+.text {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Lucida handwriting", "Comic Sans", cursive;
+    color: #2b2b2b;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7p
+}
+
+.bubbles{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    z-index:-1;
+    overflow:hidden;
+    top:0;
+    left:0;
+  }
+  .bubble{
+    position: absolute;
+    bottom:-100px;
+    width:40px;
+    height: 40px;
+    background:#bceefd;
+    border-radius:50%;
+    opacity:0.7;
+    animation: rise 10s infinite ease-in;
+  }
+  .bubble:nth-child(1){
+    width:40px;
+    height:40px;
+    left:10%;
+    animation-duration:8s;
+  }
+  .bubble:nth-child(2){
+    width:20px;
+    height:20px;
+    left:20%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(3){
+    width:50px;
+    height:50px;
+    left:35%;
+    animation-duration:7s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(4){
+    width:80px;
+    height:80px;
+    left:50%;
+    animation-duration:11s;
+    animation-delay:0s;
+  }
+  .bubble:nth-child(5){
+    width:35px;
+    height:35px;
+    left:55%;
+    animation-duration:6s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(6){
+    width:45px;
+    height:45px;
+    left:65%;
+    animation-duration:8s;
+    animation-delay:3s;
+  }
+  .bubble:nth-child(7){
+    width:90px;
+    height:90px;
+    left:70%;
+    animation-duration:12s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(8){
+    width:25px;
+    height:25px;
+    left:80%;
+    animation-duration:6s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(9){
+    width:15px;
+    height:15px;
+    left:70%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(10){
+    width:90px;
+    height:90px;
+    left:25%;
+    animation-duration:10s;
+    animation-delay:4s;
+  }
+  @keyframes rise{
+    0%{
+      bottom:-100px;
+      transform:translateX(0);
+    }
+    50%{
+      transform:translate(100px);
+    }
+    100%{
+      bottom:1080px;
+      transform:translateX(-200px);
+    }
+  }
