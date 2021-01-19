@@ -16,7 +16,7 @@ body {
 
 .header {
   display: grid;
-  grid-template-rows: 3fr 1fr;
+  grid-template-rows: minmax(150px,3fr) 1fr;
   justify-content: center;
 }
 
@@ -27,7 +27,7 @@ body {
   margin-top: 5%;
   grid-row-gap: 5%;
   justify-items: center;
-
+  
 }
 
 .header .logo {
@@ -83,5 +83,7 @@ body {
   font-weight: bold;
   font-family: "Lucida handwriting", "Comic Sans", cursive;
   color: #2b2b2b;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
