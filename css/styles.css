@@ -60,8 +60,9 @@ body {
   grid-template-columns: 7vh 1fr;
   justify-items: center;
   height: 5vh;
+  min-width: 60%;
   max-width: 75%;
-  width: 60vh;
+  width: fit-content;
   border: solid black 1px;
   border-radius: 2vh;
   background-color: #ffc7f1;
